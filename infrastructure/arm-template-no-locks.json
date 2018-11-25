@@ -535,7 +535,7 @@
             },
             {
               "name": "StorageAccountName",
-              "value": "[parameters('StorageAccountName')]"
+              "value": "[variables('StorageAccountName')]"
             },
             {
               "name": "tenantId",
@@ -563,7 +563,7 @@
           "type": "sourcecontrols",
           "dependsOn": [
             "[resourceId('Microsoft.Web/Sites', variables('functionAppName'))]",
-            "[resourceId('Microsoft.Storage/storageAccounts', parameters('StorageAccountName'))]",
+            "[resourceId('Microsoft.Storage/storageAccounts', variables('StorageAccountName'))]",
             "[resourceId('Microsoft.KeyVault/vaults/secrets', parameters('keyVaultName'), parameters('secretName'))]"
           ],
           "properties": {
