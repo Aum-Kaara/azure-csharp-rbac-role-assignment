@@ -779,8 +779,8 @@
               "value": "[parameters('projectDirectory')]"
             },
             {
-              "name": "dataLakeStore",
-              "value": "[parameters('storeName')]"
+              "name": "StorageAccountName",
+              "value": "[parameters('StorageAccountName')]"
             },
             {
               "name": "tenantId",
@@ -808,7 +808,7 @@
           "type": "sourcecontrols",
           "dependsOn": [
             "[resourceId('Microsoft.Web/Sites', variables('functionAppName'))]",
-            "[resourceId('Microsoft.DataLakeStore/accounts', parameters('storeName'))]",
+            "[resourceId('Microsoft.Storage/storageAccounts', parameters('StorageAccountName'))]",
             "[resourceId('Microsoft.KeyVault/vaults/secrets', parameters('keyVaultName'), parameters('secretName'))]"
           ],
           "properties": {
