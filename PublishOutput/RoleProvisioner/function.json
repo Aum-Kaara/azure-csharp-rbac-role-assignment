@@ -1,0 +1,16 @@
+{
+  "generatedBy": "Microsoft.NET.Sdk.Functions-1.0.24",
+  "configurationSource": "attributes",
+  "bindings": [
+    {
+      "type": "timerTrigger",
+      "runOnStartup": true,
+      "schedule": "0 0 0 1 1 *",
+      "useMonitor": true,
+      "name": "myTimer"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "../bin/RoleProvisioner.dll",
+  "entryPoint": "RoleProvisioner.Authorizer.Run"
+}
