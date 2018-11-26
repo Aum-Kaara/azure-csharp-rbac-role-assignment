@@ -538,8 +538,8 @@
               "value": "[resourceGroup().name]"
             },
             {
-              "name": "StorageAccountName",
-              "value": "[variables('StorageAccountName')]"
+              "name": "storageAccountName",
+              "value": "[variables('storageAccountName')]"
             },
             {
               "name": "subscriptionId",
@@ -571,7 +571,7 @@
           "type": "sourcecontrols",
           "dependsOn": [
             "[resourceId('Microsoft.Web/Sites', variables('functionAppName'))]",
-            "[resourceId('Microsoft.Storage/storageAccounts', variables('StorageAccountName'))]",
+            "[resourceId('Microsoft.Storage/storageAccounts', variables('storageAccountName'))]",
             "[resourceId('Microsoft.KeyVault/vaults/secrets', parameters('keyVaultName'), parameters('secretName'))]"
           ],
           "properties": {
