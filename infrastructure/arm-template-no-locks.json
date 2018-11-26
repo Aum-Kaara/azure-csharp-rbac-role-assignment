@@ -534,8 +534,16 @@
               "value": "[parameters('projectDirectory')]"
             },
             {
+              "name": "resourceGroupName",
+              "value": "[resourceGroup().name]"
+            },
+            {
               "name": "StorageAccountName",
               "value": "[variables('StorageAccountName')]"
+            },
+            {
+              "name": "subscriptionId",
+              "value": "[subscription().subscriptionId]"
             },
             {
               "name": "tenantId",
