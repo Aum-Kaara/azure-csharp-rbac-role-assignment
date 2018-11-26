@@ -58,7 +58,7 @@ namespace RoleProvisioner
 
             var tenantId = GetEnvironmentVariable("tenantId");
             var subscriptionId = GetEnvironmentVariable("subscriptionId");
-            var resourceGroup = GetEnvironmentVariable("resourceGroup");
+            var resourceGroup = GetEnvironmentVariable("resourceGroupName");
             var storageAccountName = GetEnvironmentVariable("storageAccountName");
 
             var resourceGroupScope = $"/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}";
