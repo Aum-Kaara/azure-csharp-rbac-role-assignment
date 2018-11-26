@@ -64,7 +64,7 @@ namespace RoleProvisioner
             var resourceGroupScope = $"/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}";
             var resourceScope = $"/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Storage/storageAccounts/{storageAccountName}";
             var ownerRole = $"/subscriptions/{subscriptionId}/providers/Microsoft.Authorization/roleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635";
-            var contributorRole = $"/subscriptions/{subscriptionId}/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c"
+            var contributorRole = $"/subscriptions/{subscriptionId}/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c";
             //var token = GetEnvironmentVariable("token");
             var token = GetAzureAccessTokenFromKeyVault();
 
